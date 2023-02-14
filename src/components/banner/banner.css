@@ -1,0 +1,7 @@
+#banner-container {
+    background-image:url('https://images.pexels.com/photos/8574509/pexels-photo-8574509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position:center;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+}

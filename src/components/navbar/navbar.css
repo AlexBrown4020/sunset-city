@@ -3,11 +3,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1%;
     background-color: rgb(218, 218, 218);
 }
 
 #logo-title-container {
+    padding-left: 2%;
     display: flex;
     align-items: center;
     width: 40%;
