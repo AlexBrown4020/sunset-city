@@ -23,7 +23,7 @@
     padding-left: 1%;
 }
 
-nav {
+#nav-button-container {
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -34,4 +34,35 @@ nav {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 1px gray;
+}
+
+@media screen and (max-width: 850px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #logo-title-container {
+        width: 50%;
+    }
+    #sunset-logo {
+        width: 50px;
+    }
+    #title {
+        font-size: 28px;
+    }
+    #nav-button-container {
+        flex-direction: row;  
+        margin-bottom: 2%;
+    }
+    .nav-button {
+        font-size: 20px;
+        max-width: 50%;
+        margin: 1px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #sunset-logo {
+        width: 70px;
+    }
 }
