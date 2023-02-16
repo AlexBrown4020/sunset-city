@@ -16,8 +16,8 @@
 }
 
 #banner-title {
-    color: rgb(233,232,232);
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    color: rgb(10, 10, 10);
+    text-shadow: rgb(154, 154, 154) 1px 1px 1px;
 }
 
 #about-paragraph-container {
@@ -25,10 +25,10 @@
 }
 
 .about-paragraph {
-    color: rgb(238, 238, 238);
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    color: rgb(11, 11, 11);
+    text-shadow: rgb(161, 161, 161) 1px 1px 1px;
     font-weight:550;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media screen and (max-width: 905px) {
