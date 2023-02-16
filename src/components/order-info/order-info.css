@@ -1,0 +1,34 @@
+#order-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+
+}
+
+.central-order-info {
+    width: 60%;
+    height: 700px;
+
+    background-color: rgb(189, 189, 189);
+}
+
+.flank-container {
+    height: 700px;
+    width: 20%;
+    background-position:center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.left {
+    background-image: url('https://images.pexels.com/photos/15476710/pexels-photo-15476710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+}
+
+.right {
+    background-image: url('https://images.pexels.com/photos/8220907/pexels-photo-8220907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+}
+
+#order-info-title {
+    font-size: 26px;
+}
