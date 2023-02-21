@@ -23,6 +23,7 @@
     justify-content:start;
     border-bottom: 1px gray solid;
     width: 80%;
+    align-items: center;
 }
 
 .product-bottom {
@@ -37,6 +38,7 @@
     border-right: 1px gray solid;
     font-size: 30px;
     font-weight: 250;
+
 }
 
 .product-text-cost {
@@ -52,6 +54,7 @@
     width: 180px;
     display: flex;
     font-size: 34px;
+    padding-right: 15px;
 }
 
 .cost {
