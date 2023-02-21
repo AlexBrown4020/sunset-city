@@ -1,0 +1,38 @@
+#news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news-title {
+    font-size:28px;
+}
+
+#content-container {
+    max-width: 85%;
+    padding: 20px;
+    background-color: rgb(225, 224, 224);
+    height: 350px;
+    border-radius: 5px;
+    overflow: scroll;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.news-content {
+    border-bottom: 1px black solid;
+    text-align: left;
+}
+
+.news-content-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.news-content-p {
+    font-weight: 450;
+}
+
+.news-content-date {
+    font-size: 14px;
+    
+}
