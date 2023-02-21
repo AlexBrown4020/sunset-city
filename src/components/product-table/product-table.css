@@ -20,7 +20,7 @@
 
 .product {
     display: flex;
-    justify-content:start;
+    justify-content: flex-start;
     border-bottom: 1px gray solid;
     width: 80%;
     align-items: center;
@@ -28,7 +28,7 @@
 
 .product-bottom {
     display: flex;
-    justify-content:start;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     border-radius: 5px;
@@ -44,7 +44,7 @@
 
 .product-text-cost {
     display: flex;
-    align-items:start;
+    align-items: flex-start;
     margin-left: 5px;
     font-size: 24px;
     font-weight: 250;
