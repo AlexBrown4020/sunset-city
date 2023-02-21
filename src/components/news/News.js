@@ -19,7 +19,7 @@ export const News = () => {
                         return <div className='news-content'>
                                 <p className='news-content-title'>{obj.title}</p>
                                 <p className='news-content-p'>{obj.content}</p>
-                                <p className='news-content-date'>{obj.date}</p>
+                                <p className='news-content-date'>Posted: {obj.date}</p>
                             </div>
                     })
                 }
