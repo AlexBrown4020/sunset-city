@@ -7,10 +7,13 @@
 }
 
 .central-order-info {
+    display: flex;
     width: 60%;
     height: 700px;
-
-    background-color: rgb(189, 189, 189);
+    border-left: 6px #8273AC solid;
+    border-right: 6px #8273AC solid;
+    justify-content: center;
+    background-color: rgb(225, 224, 224);
 }
 
 .flank-container {
@@ -30,5 +33,24 @@
 }
 
 #order-info-title {
+    font-size: 32px;
+}
+
+#sub-container {
+    width: 80%;
+}
+
+#order-instructions {
     font-size: 26px;
+}
+
+#order-paragraphs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.order-step {
+    padding: 8px;
+    font-size: 18px;
 }

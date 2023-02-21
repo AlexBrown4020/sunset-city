@@ -15,7 +15,7 @@
 }
 
 #product-title {
-    font-size: 30px;
+    font-size: 34px;
 }
 
 .product {
@@ -31,6 +31,7 @@
     justify-content:start;
     align-items: center;
     width: 80%;
+    border-radius: 5px;
 }
 
 .product-text {
