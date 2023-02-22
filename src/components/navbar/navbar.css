@@ -8,6 +8,7 @@
     box-sizing: border-box;
     z-index: 2;
     position: fixed;
+    opacity: 90%;
 }
 
 #logo-title-container {
@@ -53,7 +54,7 @@ nav {
 }
 
 .menu {
-    width: 25vw;
+    width: 20vw;
     height: 100%;
     background-color: rgb(218, 218, 218);
     position: fixed;
