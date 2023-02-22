@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Lexend+Zetta:wght@300&family=Lobster&family=Oleo+Script&display=swap');
 
 #navbar {
     display: flex;
@@ -80,9 +81,10 @@ ul {
     margin-right: 4%;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: black;
+    font-family: 'Lobster', cursive;
 }
 
 ul:hover {

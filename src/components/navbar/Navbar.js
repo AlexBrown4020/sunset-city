@@ -32,19 +32,19 @@ const Navbar = () => {
             </nav>
             <div className={menu}>
                 <ul>
-                    <a href='#banner-container'>Top</a>
+                    <a className='nav-link' href='#banner-container'>Top</a>
                 </ul>
                 <ul>
-                    <a href='#product-container'>Products</a>
+                    <a className='nav-link' href='#product-container'>Products</a>
                 </ul>
                 <ul>
-                    <a href='#order-info-container'>Order</a>
+                    <a className='nav-link' href='#order-info-container'>Order</a>
                 </ul>
                 <ul>
-                    <a href='#news-container'>News</a>
+                    <a className='nav-link' href='#news-container'>News</a>
                 </ul>
                 <ul>
-                    <a href='#footer-container'>Bottom</a>
+                    <a className='nav-link' href='#footer-container'>Bottom</a>
                 </ul>
             </div>
         </div>
