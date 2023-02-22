@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 #banner-container {
     height: 400px;
     width: 100%;
@@ -18,17 +20,20 @@
 }
 
 #banner-title {
-    color: rgb(10, 10, 10);
-    text-shadow: rgb(154, 154, 154) 1px 1px 1px;
-    font-size: 28px;
+    color: black;
+    text-shadow: rgb(226, 226, 226) 1px 1px 1px;
+    font-size: 40px;
     margin-bottom:0;
     padding-top: 0;
+    font-family: 'Oleo Script', cursive;
+    font-weight: 300;
 }
 
 .about-paragraph {
     color: rgb(11, 11, 11);
-    text-shadow: rgb(161, 161, 161) 1px 1px 1px;
-    font-size: 20px;
+    text-shadow: rgb(223, 223, 223) 1px 1px 1px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 905px) {

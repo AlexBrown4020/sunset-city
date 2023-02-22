@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 #news-container {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,9 @@
 }
 
 #news-title {
-    font-size:28px;
+    font-size:32px;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 1px 1px 1px white;
 }
 
 #content-container {

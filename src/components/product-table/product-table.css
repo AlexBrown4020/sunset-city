@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 #product-container {
     display: flex;
     flex-direction: column;
@@ -16,6 +18,8 @@
 
 #product-title {
     font-size: 34px;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 1px 1px 1px white;
 }
 
 .product {

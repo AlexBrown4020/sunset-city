@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 #order-info-container {
     display: flex;
     align-items: center;
@@ -34,6 +36,8 @@
 
 #order-info-title {
     font-size: 32px;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 1px 1px 1px white;
 }
 
 #sub-container {
