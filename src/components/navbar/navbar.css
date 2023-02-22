@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -26,6 +28,7 @@
 #title {
     font-size: 48px;
     padding-left: 1%;
+    font-family: 'Oleo Script', cursive;
 }
 
 nav {

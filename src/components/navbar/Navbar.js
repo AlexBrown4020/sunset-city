@@ -21,7 +21,7 @@ const Navbar = () => {
         <div id='navbar'>
             <div id='logo-title-container'>
                 <img id='sunset-logo' src='https://iili.io/HEtcis2.jpg' alt='sunset city logo'/>
-                <h1 id='title'>Sunset City</h1>
+                <h1 id='title'>Welcome to Sunset City</h1>
             </div>
             <nav>
                 <div className='burger-menu' onClick={updateMenu}>
