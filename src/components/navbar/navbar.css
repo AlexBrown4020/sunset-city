@@ -64,6 +64,24 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: left;
+}
+
+ul {
+    border-bottom: 1px gray solid;
+    width: 75%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 4%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul:hover {
+    background-color: #9e9e9e;
 }
 
 .hidden {

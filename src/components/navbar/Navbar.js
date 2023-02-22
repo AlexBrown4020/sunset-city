@@ -31,11 +31,21 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className={menu}>
-                <ul>Top</ul>
-                <ul>Products</ul>
-                <ul>Order</ul>
-                <ul>News</ul>
-                <ul>Bottom</ul>
+                <ul>
+                    <a href='#banner-container'>Top</a>
+                </ul>
+                <ul>
+                    <a href='#product-container'>Products</a>
+                </ul>
+                <ul>
+                    <a href='#order-info-container'>Order</a>
+                </ul>
+                <ul>
+                    <a href='#news-container'>News</a>
+                </ul>
+                <ul>
+                    <a href='#footer-container'>Bottom</a>
+                </ul>
             </div>
         </div>
     )
