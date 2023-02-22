@@ -4,7 +4,6 @@ export const OrderInfo = () => {
     return (
         <div id='order-info-container'>
             <div className='flank-container left'>
-
             </div>
             <div className='central-order-info'>
                 <div id='sub-container'>
@@ -20,9 +19,7 @@ export const OrderInfo = () => {
 
             </div>
             <div className='flank-container right'>
-
             </div>
-
         </div>
     )
 };

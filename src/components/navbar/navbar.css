@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(55, 55, 55);
     min-width: 100%;
     box-sizing: border-box;
     z-index: 2;
@@ -30,7 +30,9 @@
     font-size: 48px;
     padding-left: 1%;
     font-family: 'Oleo Script', cursive;
-    text-shadow: 1px 1px 1px white;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 nav {

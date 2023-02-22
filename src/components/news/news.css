@@ -10,13 +10,16 @@
 #news-title {
     font-size:32px;
     font-family: 'Oleo Script', cursive;
-    text-shadow: 1px 1px 1px white;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    font-weight: 400;
+    border-bottom: 1px solid white;
 }
 
 #content-container {
     max-width: 85%;
     padding: 20px;
-    background-color: rgb(225, 224, 224);
+    background-color: rgb(212, 212, 212);
     height: 350px;
     border-radius: 5px;
     overflow: scroll;

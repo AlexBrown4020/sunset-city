@@ -3,7 +3,7 @@
     min-height: 100%;
     justify-content:space-around;
     flex-direction: row;
-    background-color: rgb(152, 152, 152);
+    background-color: rgb(97, 97, 97);
     width: 100%;
 }
 
@@ -15,10 +15,14 @@
 #footer-media-block {
     display: flex;
     flex-direction: row;
-
 }
 
 .footer-p {
     font-size: 14px;
     text-align: left;
+    color: white;
+}
+
+h5 {
+    color: white;
 }

@@ -5,12 +5,14 @@
     flex-direction: column;
     align-items: center;
     margin: 5%;
+    background-image: url('https://img.freepik.com/free-vector/neon-grid-background_53876-91657.jpg?w=1060&t=st=1677063392~exp=1677063992~hmac=e2cf2fccaa9f08f15e0ecb468fe798a9c81c8ebfd1559b67fcf2c50a0e0603a4');
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(55, 55, 55);
+    background-position: center;
 }
 
 #product-table {
     border-radius: 5px;
-    box-shadow: 1px 1px 1px gray;
-    background-color: rgb(230, 230, 230);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +21,9 @@
 #product-title {
     font-size: 34px;
     font-family: 'Oleo Script', cursive;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px 1px rgb(8, 25, 104);
+    color: rgb(228, 228, 228);
+    font-weight: 500;
 }
 
 .product {
@@ -43,16 +47,19 @@
     border-right: 1px gray solid;
     font-size: 30px;
     font-weight: 250;
-
+    color: white;
+    text-align: left;
+    margin-left: 10px;
 }
 
 .product-text-cost {
     display: flex;
     align-items: flex-start;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 24px;
     font-weight: 250;
     align-items: center;
+    color: white;  
 }
 
 .name {
@@ -60,6 +67,7 @@
     display: flex;
     font-size: 34px;
     padding-right: 15px;
+    font-weight: 350;
 }
 
 .cost {
