@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(55, 55, 55);
+    background-color: rgb(30, 29, 29);
     min-width: 100%;
     box-sizing: border-box;
     z-index: 2;
@@ -32,8 +32,7 @@
     font-family: 'Oleo Script', cursive;
     font-weight: 400;
     text-shadow: 1px 1px 1px black;
-    color: white;
-    
+    color: white; 
 }
 
 nav {
@@ -57,14 +56,14 @@ nav {
 .burger-bar {
     width: 4em;
     height: 0.5em;
-    background-color: #8273AC;
+    background-color: #8683F3;
     border-radius: 0.5em;
 }
 
 .menu {
     width: 30vw;
     height: 100%;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(30, 29, 29);
     position: fixed;
     right:0;
     top: 0;
@@ -86,8 +85,10 @@ ul {
 
 .nav-link {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Lobster', cursive;
+    text-shadow: black;
+    font-weight: 400;
 }
 
 ul:hover {

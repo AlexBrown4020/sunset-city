@@ -24,42 +24,41 @@
     text-shadow: 1px 1px 1px rgb(8, 25, 104);
     color: rgb(228, 228, 228);
     font-weight: 500;
+    border-bottom: rgba(255, 255, 255, 0.711) 3px solid;
+    width: 100%;
 }
 
 .product {
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px gray solid;
-    width: 80%;
-    align-items: center;
+    border-bottom: 1px rgba(255, 255, 255, 0.806) solid;
+    width: 100%;
 }
 
-.product-bottom {
+.bottom {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .product-text {
     padding: 5px;
-    border-right: 1px gray solid;
     font-size: 30px;
     font-weight: 250;
     color: white;
     text-align: left;
     margin-left: 10px;
+    height: 100%;
 }
 
 .product-text-cost {
     display: flex;
     align-items: flex-start;
-    margin-left: 10px;
     font-size: 24px;
     font-weight: 250;
-    align-items: center;
-    color: white;  
+    color: white;
 }
 
 .name {

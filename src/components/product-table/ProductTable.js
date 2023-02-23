@@ -15,7 +15,7 @@ export const ProductTable = () => {
                     <p className='product-text info'>Product description about what you get, the mid tier investment</p>
                     <p className='product-text-cost cost'>Cost $$</p>
                 </div>
-                <div className='product-bottom'>
+                <div className='product bottom'>
                     <p className='product-text name'>Product 3</p>
                     <p className='product-text info'>Product description about what you get, the high tier investment</p>
                     <p className='product-text-cost cost'>Cost $$$</p>
