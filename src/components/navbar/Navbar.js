@@ -35,7 +35,7 @@ const Navbar = () => {
                     <a className='nav-link' href='#banner-container'>Top</a>
                 </ul>
                 <ul>
-                    <a className='nav-link' href='#product-container'>Products</a>
+                    <a className='nav-link' href='#banner-title'>Products</a>
                 </ul>
                 <ul>
                     <a className='nav-link' href='#order-info-container'>Order</a>
