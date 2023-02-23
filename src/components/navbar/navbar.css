@@ -97,7 +97,7 @@ ul:hover {
 
 .hidden {
     right: -50%;
-    transition: ease-out 1s;
+    transition: ease-out .5s;
 }
 
 .visible {
