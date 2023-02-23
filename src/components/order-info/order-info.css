@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Encode+Sans+Condensed:wght@400&family=Faster+One&family=Lexend+Zetta:wght@300&family=Lobster&family=Oleo+Script&family=Prompt:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Encode+Sans+Condensed:wght@200&family=Faster+One&family=Lexend+Zetta:wght@300&family=Lobster&family=Oleo+Script&family=Prompt:wght@200&family=Ubuntu:ital,wght@1,300&display=swap');
 
 #order-info-container {
     display: flex;
@@ -73,4 +72,5 @@ li {
 .order-subtext {
     padding-left: 5%;
     color: rgb(210, 209, 209);
+    font-family: 'Ubuntu', sans-serif;
 }
