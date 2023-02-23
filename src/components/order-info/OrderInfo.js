@@ -8,12 +8,19 @@ export const OrderInfo = () => {
             <div className='central-order-info'>
                 <div id='sub-container'>
                     <h3 id='order-info-title'>Order Info</h3>
-                    <p id='order-instructions'>Here are a list of instructions on how to order the products</p>
+                    <p id='order-instructions'>To get your copy and more, follow these steps!</p>
                     <div id='order-paragraphs'>
-                        <li className='order-step'>Here is instruction one, do this stuff.  Lorem ipsum blah blah blah blah blah blah blah blah blah</li>
-                        <li className='order-step'>Here is a link to a payment page: <a href='fake'>fake path</a></li>
-                        <li className='order-step'>Email to official vendor, and other vital information: fake@email.com</li>
-                        <li className='order-step'>Other information that might be useful</li>
+                        <ol>
+                            <li>Follow the link to our GoFundMe page</li>
+                                <p className='order-subtext'>www.example.com</p>
+                            <li>Apply for the subscription tier with your account</li>
+                                <p className='order-subtext'>Receive email instructions about your tier</p>
+                            <li>Get access to your content</li>
+                                <p className='order-subtext'>Downloadable content is immediately available</p>
+                                <p className='order-subtext'>Physical products ship to Europe and America within 1-3 weeks</p>
+                            <li>Keep up to date with the news column</li>
+                                <p className='order-subtext'>Find out about product updates and new releases!</p>
+                        </ol>
                     </div>
                 </div>
 

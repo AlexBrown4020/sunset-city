@@ -8,7 +8,10 @@
     background-image: url('https://images.pexels.com/photos/12843338/pexels-photo-12843338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     border-radius: 20px;
     box-shadow: 1px 1px 1px rgb(55, 55, 55);
-    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 75%;
 }
 
 #product-table {
@@ -30,7 +33,7 @@
 
 .product {
     display: flex;
-    justify-content:space-between;
+    justify-content: flex-start;
     border-bottom: 1px rgba(255, 255, 255, 0.806) solid;
     width: 100%;
 }
@@ -50,7 +53,6 @@
     font-weight: 250;
     color: white;
     text-align: left;
-    margin-left: 10px;
     height: 100%;
 }
 
@@ -65,4 +67,9 @@
 .info {
     font-weight: 100;
     font-size: 25px;
+}
+
+.cost {
+    width: fit-content;
+    margin: 2%;
 }

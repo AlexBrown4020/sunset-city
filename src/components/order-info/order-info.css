@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 5%;
+    width: 100%;
 }
 
 .central-order-info {
@@ -13,7 +14,7 @@
     width: 58%;
     height: 700px;
     justify-content: center;
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(74, 69, 74);
     border-radius: 30px;
 }
 
@@ -44,6 +45,7 @@
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     color: white;
     font-weight: 300;
+    border-bottom: 2px white solid;
 }
 
 #sub-container {
@@ -51,8 +53,10 @@
 }
 
 #order-instructions {
-    font-size: 26px;
+    font-size: 28px;
     color: white;
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 #order-paragraphs {
@@ -61,8 +65,12 @@
     text-align: left;
 }
 
-.order-step {
-    padding: 8px;
-    font-size: 18px;
+li {
     color: white;
+    font-size: 20px;
+}
+
+.order-subtext {
+    padding-left: 5%;
+    color: rgb(210, 209, 209);
 }
