@@ -61,7 +61,7 @@ nav {
 }
 
 .menu {
-    width: 30vw;
+
     height: 100%;
     background-color: rgb(30, 29, 29);
     position: fixed;
@@ -96,11 +96,13 @@ ul:hover {
 }
 
 .hidden {
-    display: none;
+    right: -50%;
+    transition: ease-out 1s;
 }
 
 .visible {
-    display: inherit;
+    width: 30vw;
+    transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(1){
