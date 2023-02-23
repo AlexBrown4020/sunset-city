@@ -19,7 +19,7 @@
 
 .flank-container {
     height: 700px;
-    width: 18%;
+    width: 20%;
     background-position:center;
     background-repeat: none;
     background-size: cover;
@@ -28,12 +28,14 @@
 
 .left {
     background-image: url('https://images.pexels.com/photos/15476710/pexels-photo-15476710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .right {
     background-image: url('https://images.pexels.com/photos/8220907/pexels-photo-8220907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 #order-info-title {
