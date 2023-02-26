@@ -1,5 +1,5 @@
 import './navbar.css';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 const Navbar = () => {
     const ref = useRef(null);
@@ -18,18 +18,6 @@ const Navbar = () => {
         }
         setIsMenuClicked(!isMenuClicked);
     }
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!ref.current.contains(event.target)) {
-                setIsShown(false);
-            }
-        };
-        document.addEventListener('click', handleClickOutside, true);
-        return () => {
-            document.removeEventListener('click', handleClickOutside, true)
-        };
-    }, []);
  
     return (
         <div id='navbar'>
@@ -40,7 +28,14 @@ const Navbar = () => {
             {
                 isShown ?
                     <div id='authenticate-admin-container'>
-                        <h5 id='admin-title'>Admin Login</h5>
+                        <div id='authenticate-top'>
+                            <h5 id='admin-title'>Admin Login</h5>
+                            <div id='auth-exit' onClick={() => {
+                                setIsShown(false);
+                            }}>
+                                X
+                            </div>
+                        </div>
                         <input></input>
                         <input></input>
                         <button>Login</button>

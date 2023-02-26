@@ -145,6 +145,26 @@ ul:hover {
     width: 50%;
     height: 30%;
     justify-content: space-evenly;
+    z-index: 3;
+}
+
+#authenticate-top {
+    display: flex;
+    flex-direction: row;
+}
+
+#admin-title {
+    margin-right: 50%;
+    margin-left: 30%;
+    font-size: 18px;
+}
+
+#auth-exit {
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    display: flex;
 }
 
 @media screen and (max-width: 850px) {
