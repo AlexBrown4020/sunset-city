@@ -84,6 +84,10 @@ ul {
     margin-right: 4%;
 }
 
+.login {
+    font-size: 20px;
+}
+
 .nav-link {
     text-decoration: none;
     color: white;
@@ -123,6 +127,24 @@ ul:hover {
 .burger-bar.unclicked {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885. 0.32, 1.275) 0.5s;
+}
+
+#authenticate-admin-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(60, 60, 59);
+    transform: translate(-50%, -50%);
+    background-color: rgb(60, 60, 59);
+    border: 2px rgb(90, 90, 90) solid;
+    box-shadow: 2px 2px 2px rgb(57, 57, 57);
+    border-radius: 8px;
+    width: 50%;
+    height: 30%;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 850px) {
