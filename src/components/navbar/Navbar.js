@@ -70,10 +70,10 @@ const Navbar = () => {
                 <ul>
                     <a className='nav-link' href='#footer-container'>Bottom</a>
                 </ul>
-                <ul>
-                    <p ref={ref} className='nav-link login' onClick={() => {
+                <ul onClick={() => {
                         setIsShown(!isShown);
-                    }}>Login</p>
+                    }}>
+                    <p ref={ref} className='nav-link login'>Login</p>
                 </ul>
             </div>
         </div>
