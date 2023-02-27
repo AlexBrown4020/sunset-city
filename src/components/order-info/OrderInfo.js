@@ -11,14 +11,14 @@ export const OrderInfo = () => {
                     <p id='order-instructions'>To get your copy and more, follow these steps!</p>
                     <div id='order-paragraphs'>
                         <ol>
-                            <li>Follow the link to our GoFundMe page</li>
+                            <li className='order-text'>Follow the link to our GoFundMe page</li>
                                 <p className='order-subtext'>www.example.com</p>
-                            <li>Apply for the subscription tier with your account</li>
+                            <li className='order-text'>Apply for the subscription tier with your account</li>
                                 <p className='order-subtext'>Receive email instructions about your tier</p>
-                            <li>Get access to your content</li>
+                            <li className='order-text'>Get access to your content</li>
                                 <p className='order-subtext'>Downloadable content is immediately available</p>
                                 <p className='order-subtext'>Physical products ship to Europe and America within 1-3 weeks</p>
-                            <li>Keep up to date with the news column</li>
+                            <li className='order-text'>Keep up to date with the news column</li>
                                 <p className='order-subtext'>Find out about product updates and new releases!</p>
                         </ol>
                     </div>

@@ -1,5 +1,5 @@
 import './navbar.css';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const Navbar = () => {
     const ref = useRef(null);
@@ -9,6 +9,18 @@ const Navbar = () => {
     const [isShown, setIsShown] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [auth, setAuth] = useState('');
+
+
+    useEffect(() => {
+        setAuth(localStorage.getItem('user'));
+        if (auth) {
+            console.log("Admin found");
+            setAuth(auth);
+        } else {
+            console.log('No admin found');
+        }
+    }, [auth])
 
     const updateMenu = () => {
         if(!isMenuClicked) {
