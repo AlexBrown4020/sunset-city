@@ -76,3 +76,15 @@
     margin-right: 5%;
     font-size: 28px;
 }
+
+@media screen and (max-width: 815px) {
+    #product-title {
+        font-size: 26px;
+    }
+    .product-text {
+        font-size: 20px;
+    }
+    #product-container {
+        width: 100%;
+    }
+}

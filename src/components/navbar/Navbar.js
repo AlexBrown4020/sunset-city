@@ -15,10 +15,7 @@ const Navbar = () => {
     useEffect(() => {
         setAuth(localStorage.getItem('user'));
         if (auth) {
-            console.log("Admin found");
             setAuth(auth);
-        } else {
-            console.log('No admin found');
         }
     }, [auth])
 
