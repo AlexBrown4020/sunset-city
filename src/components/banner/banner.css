@@ -36,8 +36,14 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 905px) {
-    #text-container {
-        background-color:rgba(42, 42, 42, 0.238);
+@media screen and (max-width: 815px) {
+    #banner-container {
+        padding-top: 35%;
+    }
+    #banner-title {
+        font-size: 28px;
+    }
+    .about-paragraph {
+        font-size: 22px;
     }
 }
