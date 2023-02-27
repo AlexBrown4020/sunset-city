@@ -41,6 +41,30 @@
 }
 
 .news-content-date {
-    font-size: 14px;
-    
+    font-size: 14px;   
+}
+
+#create-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 77, 77);
+    padding: 25%;
+}
+
+.create-input {
+    margin: 15%;
+}
+
+.large-input {
+    padding: 15%;
+}
+
+#create-news {
+    color: white;
+}
+
+#news-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
