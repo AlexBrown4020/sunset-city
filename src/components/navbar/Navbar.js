@@ -7,6 +7,8 @@ const Navbar = () => {
     const [menu, setMenu] = useState('menu hidden');
     const [isMenuClicked, setIsMenuClicked] = useState(false);
     const [isShown, setIsShown] = useState(false);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
     const updateMenu = () => {
         if(!isMenuClicked) {
@@ -18,6 +20,24 @@ const Navbar = () => {
         }
         setIsMenuClicked(!isMenuClicked);
     }
+
+    const submitData = async () => {
+        let result = await fetch('https://sunset-city-api.herokuapp.com/auth/login', {
+            method: 'post',
+            body: JSON.stringify({
+                username, password
+            }),
+            headers: {
+                'Content-Type':'application/json'
+            }
+        });
+        result = await result.json();
+        if (result.username) {
+            localStorage.setItem('user', JSON.stringify(result));
+        } else {
+            alert('Please enter correct details');
+        }
+    };
  
     return (
         <div id='navbar'>
@@ -36,9 +56,11 @@ const Navbar = () => {
                                 X
                             </div>
                         </div>
-                        <input></input>
-                        <input></input>
-                        <button>Login</button>
+                        <input className='submissionInput' type='text' placeholder='Enter Username' onChange={(e) => {
+                            setUsername(e.target.value)}} value={username}></input>
+                        <input className='submissionInput' type='text' placeholder='Enter Username' onChange={(e) => {
+                            setPassword(e.target.value)}} value={password}></input>
+                        <button onClick={submitData}>Login</button>
                     </div>
                 : <></>
             }
