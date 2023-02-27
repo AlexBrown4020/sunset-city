@@ -34,6 +34,8 @@ const Navbar = () => {
         result = await result.json();
         if (result.username) {
             localStorage.setItem('user', JSON.stringify(result));
+            setIsShown(false);
+            alert('Successfully logged in as admin')
         } else {
             alert('Please enter correct details');
         }
@@ -58,7 +60,7 @@ const Navbar = () => {
                         </div>
                         <input className='submissionInput' type='text' placeholder='Enter Username' onChange={(e) => {
                             setUsername(e.target.value)}} value={username}></input>
-                        <input className='submissionInput' type='text' placeholder='Enter Username' onChange={(e) => {
+                        <input className='submissionInput' type='text' placeholder='Enter Password' onChange={(e) => {
                             setPassword(e.target.value)}} value={password}></input>
                         <button onClick={submitData}>Login</button>
                     </div>
