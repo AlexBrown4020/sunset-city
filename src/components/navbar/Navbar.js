@@ -10,14 +10,16 @@ const Navbar = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [auth, setAuth] = useState('');
-
+    
 
     useEffect(() => {
         setAuth(localStorage.getItem('user'));
         if (auth) {
             setAuth(auth);
         }
-    }, [auth])
+    }, [auth]);
+
+    
 
     const updateMenu = () => {
         if(!isMenuClicked) {
@@ -48,6 +50,12 @@ const Navbar = () => {
         } else {
             alert('Please enter correct details');
         }
+
+    };
+
+    const logout = () => {
+        localStorage.setItem('user', '');
+        alert('Logged out');
     };
  
     return (
@@ -98,11 +106,20 @@ const Navbar = () => {
                 <ul>
                     <a className='nav-link' href='#footer-container'>Bottom</a>
                 </ul>
-                <ul onClick={() => {
-                        setIsShown(!isShown);
-                    }}>
-                    <p ref={ref} className='nav-link login'>Login</p>
-                </ul>
+                {
+                    auth ? 
+                    <ul onClick={logout} to={'/'}>
+                        <p className='nav-link'>Logout</p>
+                    </ul>
+                        // <p className='nav-link login' >Logout</p>
+                    :
+                    <ul onClick={() => {
+                        setIsShown(!isShown)
+                    }} to={'/'}>
+                        <p ref={ref} className='nav-link login'>Login</p>
+                    </ul>
+                }
+
             </div>
         </div>
     )
