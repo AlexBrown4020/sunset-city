@@ -13,12 +13,12 @@ export const News = () => {
     useEffect(() => {
         async function fetchNews() {
             const request = await axios.get(url);
-            setData(request.data)
+            setData(request.data);
         }
-        fetchNews()
+        fetchNews();
 
         setAuth(localStorage.getItem('user'));
-        if (auth) {
+        if (auth.username) {
             setAuth(auth);
         }
     }, [auth, url]);

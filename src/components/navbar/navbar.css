@@ -93,6 +93,7 @@ ul {
     font-family: 'Lobster', cursive;
     text-shadow: black;
     font-weight: 400;
+    font-size: 28px;
 }
 
 ul:hover {
@@ -164,6 +165,15 @@ ul:hover {
     color: white;
     align-items: center;
     display: flex;
+}
+
+#login-submit-button {
+    background-color: unset;
+    border: 2px solid white;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1008px) {
