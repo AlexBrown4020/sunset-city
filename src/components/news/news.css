@@ -20,7 +20,7 @@
     max-width: 85%;
     padding: 20px;
     background-color: rgb(212, 212, 212);
-    height: 350px;
+    height: 25%;
     border-radius: 5px;
     overflow: scroll;
     box-shadow: 1px 1px 1px gray;
@@ -54,8 +54,9 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(77, 77, 77);
-    padding: 10%;
-    margin: 10%;
+    padding: 2%;
+    margin: 2%;
+    align-items: center;
 }
 
 .create-input {
@@ -63,7 +64,7 @@
 }
 
 .large-input {
-    padding: 15%;
+    margin: 15%;
 }
 
 #create-news {
