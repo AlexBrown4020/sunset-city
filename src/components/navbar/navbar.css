@@ -166,6 +166,12 @@ ul:hover {
     display: flex;
 }
 
+@media screen and (max-width: 1008px) {
+    #title {
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 850px) {
     #navbar {
         flex-direction: row;
@@ -179,7 +185,7 @@ ul:hover {
         width: 50px;
     }
     #title {
-        font-size: 28px;
+        font-size: 24px;
     }
     #nav-button-container {
         flex-direction: row;  
