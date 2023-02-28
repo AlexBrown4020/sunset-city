@@ -9,7 +9,7 @@
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 13%;
+    padding-top: 10%;
 }
 
 #text-container {
@@ -34,6 +34,7 @@
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     font-size: 23px;
     font-weight: 500;
+    width: 75%;
 }
 
 @media screen and (max-width: 815px) {
