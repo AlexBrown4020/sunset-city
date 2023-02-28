@@ -73,7 +73,11 @@ export const News = () => {
                             return <div className='news-content' key={obj.title}>
                                     <div id='news-banner'>
                                         <p  className='news-content-title'>{obj.title}</p>
-                                        <button onClick={() => deleteData(obj._id)}>Delete</button>
+                                        {
+                                            auth ? 
+                                            <button onClick={() => deleteData(obj._id)}>Delete</button>
+                                            : <></>
+                                        }
                                     </div>
                                     <p  className='news-content-p'>{obj.message}</p>
                                     <p  className='news-content-date'>Posted: {obj.created_date.slice(0,10)}</p>
