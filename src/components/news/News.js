@@ -18,7 +18,7 @@ export const News = () => {
         fetchNews();
 
         setAuth(localStorage.getItem('user'));
-        if (auth.username) {
+        if (auth) {
             setAuth(auth);
         }
     }, [auth, url]);
