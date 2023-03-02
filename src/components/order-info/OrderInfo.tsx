@@ -1,3 +1,4 @@
+import React from 'react';
 import './order-info.css';
 
 export const OrderInfo = () => {
