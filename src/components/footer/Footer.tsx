@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 import './footer.css';
+import React from 'react';
 
 export const Footer = () => {
     return (

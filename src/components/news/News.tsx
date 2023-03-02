@@ -2,10 +2,19 @@ import { useEffect, useState } from 'react';
 
 import './news.css';
 import axios from 'axios';
+import React from 'react';
 
 export const News = () => {
+
+    interface NewsItem {
+        title: string;
+        message: string;
+        created_date: string;
+        _id: string;
+    }
+
     const url = `https://sunset-city-api.herokuapp.com/news`;
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<NewsItem[]>([]);
     const [auth, setAuth] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
@@ -17,11 +26,11 @@ export const News = () => {
         }
         fetchNews();
 
-        setAuth(localStorage.getItem('user'));
-        if (auth) {
-            setAuth(auth);
+        const user = localStorage.getItem('user');
+        if (user !== null) {
+            setAuth(user);
         }
-    }, [auth, url]);
+    }, [url]);
 
     const submitData = async () => {
         let result = await fetch('https://sunset-city-api.herokuapp.com/news', {
@@ -34,14 +43,14 @@ export const News = () => {
             }
         });
         result = await result.json();
-        if (result.title) {
+        if (result) {
             console.log("Submitted");
         } else {
             console.log("Failed");
         }
     };
 
-    const deleteData = async (id) => {
+    const deleteData = async (id: string) => {
         let news = await fetch(`https://sunset-city-api.herokuapp.com/news/${id}`, {
           method: 'delete'
         });
@@ -60,7 +69,7 @@ export const News = () => {
                     <h3 id='create-news'>Create news...</h3>
                     <input className='create-input' type='text' placeholder='News Title' onChange={(e) => {
                             setTitle(e.target.value)}} value={title}></input>
-                    <textarea className='create-input large-input' type='textarea' placeholder='News Content' onChange={(e) => {
+                    <textarea className='create-input large-input' placeholder='News Content' onChange={(e) => {
                             setMessage(e.target.value)}} value={message}></textarea>
                     <button onClick={submitData}>Submit</button>
                 </div>

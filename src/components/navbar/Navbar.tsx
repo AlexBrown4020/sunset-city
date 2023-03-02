@@ -13,11 +13,11 @@ const Navbar = () => {
     
 
     useEffect(() => {
-        setAuth(localStorage.getItem('user'));
-        if (auth) {
-            setAuth(auth);
+        const user = localStorage.getItem('user');
+        if (user !== null) {
+            setAuth(user);
         }
-    }, [auth]);
+    }, []);
 
     
 
@@ -36,16 +36,17 @@ const Navbar = () => {
         let result = await fetch('https://sunset-city-api.herokuapp.com/auth/login', {
             method: 'post',
             body: JSON.stringify({
-                username, password
+                username, 
+                password,
             }),
             headers: {
-                'Content-Type':'application/json'
-            }
+                'Content-Type':'application/json',
+            },
         });
-        result = await result.json();
-        if (result.username) {
+        const response = await result.json();
+        if (response.username !== null) {
             localStorage.setItem('user', JSON.stringify(result));
-            setAuth(result)
+            setAuth(response)
             alert('Successfully logged in as admin')
         } else {
             alert('Please enter correct details');
@@ -107,13 +108,13 @@ const Navbar = () => {
                 </ul>
                 {
                     auth ? 
-                    <ul onClick={logout} to={'/'}>
+                    <ul onClick={logout} data-to={'/'}>
                         <p className='nav-link'>Logout</p>
                     </ul>
                     :
                     <ul onClick={() => {
                         setIsShown(!isShown)
-                    }} to={'/'}>
+                    }} data-to={'/'}>
                         <p ref={ref} className='nav-link login'>Login</p>
                     </ul>
                 }
