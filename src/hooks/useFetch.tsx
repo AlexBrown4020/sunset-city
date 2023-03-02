@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const useFetch = (url) => {
+const useFetch = (url: string) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
@@ -12,7 +12,7 @@ const useFetch = (url) => {
             try{
                 const response = await axios.get(url);
                 setData(response.data)
-            } catch(err) {
+            } catch(err: any) {
                 setError(err);
             }
             setLoading(false);
@@ -25,7 +25,7 @@ const useFetch = (url) => {
         try{
             const response = await axios.get(url);
             setData(response.data)
-        } catch(err) {
+        } catch(err: any) {
             setError(err);
         }
         setLoading(false);

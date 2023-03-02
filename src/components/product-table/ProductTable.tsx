@@ -1,3 +1,4 @@
+import React from 'react';
 import './product-table.css';
 
 export const ProductTable = () => {

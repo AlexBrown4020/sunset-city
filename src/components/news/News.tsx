@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import './news.css';
 import axios from 'axios';
+import React from 'react';
 
 export const News = () => {
     const url = `https://sunset-city-api.herokuapp.com/news`;
@@ -34,7 +35,7 @@ export const News = () => {
             }
         });
         result = await result.json();
-        if (result.title) {
+        if (result) {
             console.log("Submitted");
         } else {
             console.log("Failed");
