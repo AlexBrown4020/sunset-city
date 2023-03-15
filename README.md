@@ -13,10 +13,11 @@ Sunset city is a landing page for a private client project, meant to generate in
 ### Languages:
 - ReactJS
 - TypeScript
-
-## UI/UX Design
-- Figma (Wireframing, Logo, Colorscheme)
+### Libraries:
 - MUI
+### UI/UX Design
+- Figma (Wireframing, Logo, Colorscheme)
+
 
 ## Available Scripts
 
