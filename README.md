@@ -18,7 +18,6 @@ Sunset city is a landing page for a private client project, meant to generate in
 ### UI/UX Design
 - Figma (Wireframing, Logo, Colorscheme)
 
-
 ## Available Scripts
 
 ### `npm start`
@@ -26,3 +25,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm run build`
 
+#### The sunset city api backend can be found here: https://github.com/AlexBrown4020/sunset-city-api
