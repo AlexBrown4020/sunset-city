@@ -23,7 +23,10 @@
     height: 25%;
     border-radius: 5px;
     overflow: scroll;
+    overflow-x: hidden;
     box-shadow: 1px 1px 1px gray;
+    background-color: rgb(74, 69, 74);
+    color: white;
 }
 
 .news-content {
